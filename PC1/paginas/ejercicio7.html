@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>PC1</title>
+</head>
+<body>
+    <div class="container-fluid h-100">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-12 bg-body-tertiary sidebar" style="background-color: rgb(242, 243, 242);">
+                <div class="p-3">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                        <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                        <span class="fs-4">Java Script</span>
+                    </a>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="../paginas/index.html" class="nav-link" aria-current="page">
+                                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+                                Ejercicio 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../paginas/ejercicio2.html" class="nav-link link-body-emphasis">
+                                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                Ejercicio 2
+                            </a>
+                        </li>
+                        <li>
+                            <li>
+                                <a href="../paginas/ejercicio3.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../paginas/ejercicio4.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 4
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../paginas/ejercicio5.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 5
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../paginas/ejercicio6.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 6
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../paginas/ejercicio7.html" class="nav-link link-body-emphasis active">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 7
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../paginas/ejercicio8.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 8
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../paginas/ejercicio9.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 9
+                                </a>
+                            </li>
+                        </li>
+                            <a href="../paginas/ejercicio10.html" class="nav-link link-body-emphasis">
+                                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                Ejercicio 10
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Contenido principal -->
+            <main class="col">
+                <div class="container">
+                    <h1>EJERCICIO 7</h1>
+                    <p>Venta de Computadoras</p>
+            
+                    <div id="pc-container" class="row">
+                        
+                        <!-- Tarjeta 1 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="https://coolboxpe.vtexassets.com/arquivos/ids/373702-800-auto?v=638550963581930000&width=800&height=auto&aspect=true" class="card-img-top" alt="PC Gamer">
+                                <div class="card-body">
+                                    <h5 class="card-title">PC Gamer PRO</h5>
+                                    <p class="card-text">Intel Core i9, 32GB RAM, RTX 3080</p>
+                                    <p class="card-text"><del>S/2000</del> <strong>S/1800</strong> <span class="badge bg-success">10% Descuento</span></p>
+                                    <button class="btn btn-primary" onclick="agregarCarrito('PC Gamer PRO', 1800)">Añadir al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Tarjeta 2 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="https://coolboxpe.vtexassets.com/arquivos/ids/291426-800-auto?v=638260854563900000&width=800&height=auto&aspect=true" class="card-img-top" alt="PC Oficina">
+                                <div class="card-body">
+                                    <h5 class="card-title">PC Oficina</h5>
+                                    <p class="card-text">Intel Core i5, 16GB RAM, SSD 512GB</p>
+                                    <p class="card-text"><del>S/1000</del> <strong>S/900</strong> <span class="badge bg-success">10% Descuento</span></p>
+                                    <button class="btn btn-primary" onclick="agregarCarrito('PC Oficina', 900)">Añadir al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Tarjeta 3 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <img src="https://coolboxpe.vtexassets.com/arquivos/ids/377705-800-auto?v=638574386604300000&width=800&height=auto&aspect=true" class="card-img-top" alt="PC Portátil">
+                                <div class="card-body">
+                                    <h5 class="card-title">Laptop Ultrabook</h5>
+                                    <p class="card-text">AMD Ryzen 7, 16GB RAM, SSD 1TB</p>
+                                    <p class="card-text"><del>S/1200</del> <strong>S/1080</strong> <span class="badge bg-success">10% Descuento</span></p>
+                                    <button class="btn btn-primary" onclick="agregarCarrito('Laptop Ultrabook', 1080)">Añadir al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Carrito de Compras</h3>
+                            <ul id="carrito" class="list-group"></ul>
+                            <p id="total" class="fs-5"></p>
+                            <button class="btn btn-success" onclick="finalizarCompra()">Finalizar Compra</button><br><br>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+        </div>
+    </div>
+    <script src="../scripts/ejercicio7.js"></script>
+</body>
+</html>

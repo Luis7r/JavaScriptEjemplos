@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>PC1</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 4px;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid h-100">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-12 bg-body-tertiary sidebar" style="background-color: rgb(242, 243, 242);">
+                <div class="p-3">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                        <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                        <span class="fs-4">Java Script</span>
+                    </a>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="../paginas/index.html" class="nav-link" aria-current="page">
+                                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+                                Ejercicio 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../paginas/ejercicio2.html" class="nav-link link-body-emphasis">
+                                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                Ejercicio 2
+                            </a>
+                        </li>
+                        <li>
+                            <li>
+                                <a href="../paginas/ejercicio3.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../paginas/ejercicio4.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 4
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../paginas/ejercicio5.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 5
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../paginas/ejercicio6.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 6
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../paginas/ejercicio7.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 7
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../paginas/ejercicio8.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 8
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../paginas/ejercicio9.html" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                    Ejercicio 9
+                                </a>
+                            </li>
+                        </li>
+                            <a href="../paginas/ejercicio10.html" class="active nav-link link-body-emphasis">
+                                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                                Ejercicio 10
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Contenido principal -->
+            <main class="col">
+                <div class="container">
+                    <h1>EJERCICIO 10</h1>
+                    <p>Juego del michi</p>
+                    <div class="board">
+                        <div class="cell" data-index="0"></div>
+                        <div class="cell" data-index="1"></div>
+                        <div class="cell" data-index="2"></div>
+                        <div class="cell" data-index="3"></div>
+                        <div class="cell" data-index="4"></div>
+                        <div class="cell" data-index="5"></div>
+                        <div class="cell" data-index="6"></div>
+                        <div class="cell" data-index="7"></div>
+                        <div class="cell" data-index="8"></div>
+                    </div>
+                </div>
+                
+                    
+                
+            </main>
+        </div>
+    </div>
+    <script src="../scripts/ejercicio10.js">
+
+    </script>
+</body>
+</html>

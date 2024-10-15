@@ -1,0 +1,37 @@
+@import url("index.css");
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.calendar .day {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calendar .day:hover {
+    background-color: #cce5ff;
+}
+
+.calendar .day.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.calendar .day .events {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .calendar {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
